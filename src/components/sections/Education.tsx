@@ -19,9 +19,9 @@ export function EducationSection() {
           return (
             <Card
               key={item.title}
-              className="hover:border-border-hover transition-colors"
+              className="flex flex-col hover:border-border-hover transition-colors"
             >
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-4 flex-1">
                 <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-border bg-background">
                   <Icon
                     className="h-4 w-4 text-accent"
@@ -40,6 +40,18 @@ export function EducationSection() {
                   </p>
                 </div>
               </div>
+              {item.viewUrl && (
+                <div className="mt-4 pt-4 border-t border-border">
+                  <a
+                    href={item.viewUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs font-medium tracking-wide text-accent hover:text-accent/80 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded"
+                  >
+                    VIEW →
+                  </a>
+                </div>
+              )}
             </Card>
           );
         })}
