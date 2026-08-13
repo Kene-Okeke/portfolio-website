@@ -17,6 +17,8 @@ export const educationItems: EducationItem[] = [
     title: "Advanced Google Data Analytics",
     institution: "Google Advanced Data Analytics Certificate (Google / Coursera)",
     type: "certification",
+    viewUrl:
+      "https://drive.google.com/file/d/1a0-PzON-U_Pa1DSIsFovEAOasuxBCbaC/view?usp=sharing",
   },
   {
     title: "Advanced WordPress Development",
