@@ -17,7 +17,7 @@ type Props = {
   params: Promise<{ slug: string }>;
 };
 
-const DEDICATED_CASE_STUDY_SLUGS = ["shop-eleven"];
+const DEDICATED_CASE_STUDY_SLUGS = ["shop-eleven", "garden-of-becoming"];
 
 export async function generateStaticParams() {
   return getAllProjectSlugs()

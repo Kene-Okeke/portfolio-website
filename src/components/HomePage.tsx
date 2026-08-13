@@ -6,6 +6,7 @@ import { Header, DashboardFooter } from "@/components/dashboard/Header";
 import { OverviewSection } from "@/components/sections/Overview";
 import { ProjectsSection } from "@/components/sections/Projects";
 import { TechStackSection } from "@/components/sections/TechStack";
+import { EducationSection } from "@/components/sections/Education";
 import { AboutSection } from "@/components/sections/About";
 import { JourneySection } from "@/components/sections/Journey";
 import { ContactSection, FooterLinks } from "@/components/sections/Contact";
@@ -63,6 +64,7 @@ export function HomePage() {
           <OverviewSection />
           <ProjectsSection />
           <TechStackSection />
+          <EducationSection />
           <AboutSection />
           <JourneySection />
           <ContactSection />
