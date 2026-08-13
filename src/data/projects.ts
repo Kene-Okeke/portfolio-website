@@ -95,7 +95,7 @@ export const projects: Project[] = [
     stack: ["Next.js", "React", "Prisma", "PostgreSQL", "Tailwind CSS"],
     description:
       "Interactive web application with game mechanics, user profiles, and real-time scoring built with Next.js and PostgreSQL.",
-    githubUrl: "https://github.com/yourusername/tap-munn",
+    githubUrl: "https://github.com/Kene-Okeke/Tap-Munn",
     caseStudy: {
       overview:
         "Tap Mun'n is an interactive web-based game application that combines engaging gameplay with user account management and leaderboard functionality. Currently in active development using the Next.js App Router.",

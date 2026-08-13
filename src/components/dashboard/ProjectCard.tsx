@@ -9,7 +9,21 @@ type ProjectCardProps = {
   project: Project;
 };
 
+function getStatusBadgeHref(project: Project): string | undefined {
+  if (project.status === "LIVE" && project.liveUrl) {
+    return project.liveUrl;
+  }
+
+  if (project.status === "BUILDING" && project.githubUrl) {
+    return project.githubUrl;
+  }
+
+  return undefined;
+}
+
 export function ProjectCard({ project }: ProjectCardProps) {
+  const statusHref = getStatusBadgeHref(project);
+
   return (
     <article className="rounded-lg border border-border bg-panel p-5 md:p-6 flex flex-col h-full hover:border-border-hover transition-colors">
       <div className="flex items-start justify-between gap-3 mb-3">
@@ -19,7 +33,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
           </h3>
           <p className="text-xs text-muted mt-0.5">{project.type}</p>
         </div>
-        <StatusBadge status={project.status} />
+        <StatusBadge status={project.status} href={statusHref} />
       </div>
 
       <div className="flex flex-wrap gap-1.5 mb-4">

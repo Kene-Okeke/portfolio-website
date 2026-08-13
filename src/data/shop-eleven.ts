@@ -292,8 +292,39 @@ export const shopElevenSnippets = {
   },
   cloudinary: {
     filename: "app/Services/CloudinaryService.php",
-    language: "PHP",
-    code: "[CLOUDINARY INTEGRATION CODE WILL BE INSERTED HERE]",
+    language: "php",
+    code: `<?php
+
+namespace App\\Services;
+
+use Cloudinary\\Cloudinary;
+
+class CloudinaryService
+{
+    protected $cloudinary;
+
+    public function __construct()
+    {
+        $this->cloudinary = new Cloudinary([
+            'cloud' => [
+                'cloud_name' => config('cloudinary.cloud_name'),
+                'api_key' =>  config('cloudinary.api_key'),
+                'api_secret' =>  config('cloudinary.api_secret'),
+            ],
+            
+        ]);
+    }
+
+    public function upload($image){
+
+        $result = $this->cloudinary
+            ->uploadApi()
+            ->upload($image->getRealPath());
+        
+        return $result['secure_url'];
+    }
+
+}`,
   },
   cart: {
     filename: "public/js/cart.js",
