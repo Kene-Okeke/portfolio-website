@@ -13,14 +13,14 @@ const contactLinks = [
   },
   {
     label: "GitHub",
-    value: "github.com/yourusername",
+    value: contactInfo.github.replace(/^https?:\/\//, ""),
     href: contactInfo.github,
     icon: GitHubIcon,
     external: true,
   },
   {
     label: "LinkedIn",
-    value: "linkedin.com/in/yourusername",
+    value: contactInfo.linkedin.replace(/^https?:\/\/(www\.)?/, ""),
     href: contactInfo.linkedin,
     icon: LinkedInIcon,
     external: true,
