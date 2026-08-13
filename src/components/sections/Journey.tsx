@@ -29,9 +29,27 @@ export function JourneySection() {
                   {item.title}
                 </h3>
                 <p className="text-xs text-accent mt-0.5">{item.subtitle}</p>
-                <p className="mt-3 text-sm text-muted leading-relaxed">
-                  {item.description}
-                </p>
+                {"description" in item && item.description ? (
+                  <p className="mt-3 text-sm text-muted leading-relaxed">
+                    {item.description}
+                  </p>
+                ) : null}
+                {"bullets" in item && item.bullets ? (
+                  <ul className="mt-3 space-y-2" role="list">
+                    {item.bullets.map((bullet) => (
+                      <li
+                        key={bullet}
+                        className="flex gap-2.5 text-sm text-muted leading-relaxed"
+                      >
+                        <span
+                          className="mt-[7px] h-1 w-1 shrink-0 rounded-full bg-accent"
+                          aria-hidden="true"
+                        />
+                        <span className="min-w-0">{bullet}</span>
+                      </li>
+                    ))}
+                  </ul>
+                ) : null}
               </div>
             </article>
           ))}
