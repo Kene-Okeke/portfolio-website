@@ -82,8 +82,11 @@ export function MobileNav({ activeSection, onNavigate }: MobileNavProps) {
   }, [open]);
 
   const handleNavigate = (href: string) => {
-    onNavigate(href);
     setOpen(false);
+  
+    requestAnimationFrame(() => {
+      onNavigate(href);
+    });
   };
 
   return (
