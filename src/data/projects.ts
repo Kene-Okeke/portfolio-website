@@ -133,8 +133,8 @@ export const projects: Project[] = [
           alt: "Tap Mun'n gameplay screen",
         },
         {
-          src: "/projects/tap-munn/leaderboard.png",
-          alt: "Tap Mun'n leaderboard view",
+          src: "/projects/tap-munn/auth.png",
+          alt: "Tap Mun'n authentication view",
         },
       ],
     },

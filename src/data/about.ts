@@ -11,13 +11,7 @@ My approach centers on understanding real problems and delivering solutions that
     "Open-source contribution",
   ],
   journey: [
-    {
-      period: "2021 — 2025",
-      title: "University of Ghana",
-      subtitle: "BSc Information Technology",
-      description:
-        "Built a foundation in software development, database systems, web technologies, and systems analysis, applying coursework through academic and personal projects involving full-stack applications, databases, and e-commerce systems.",
-    },
+    
     {
       period: "January 2021 – March 2023",
       title: "AretéForge — Lead Software Developer",

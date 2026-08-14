@@ -1,4 +1,4 @@
-import { Mail } from "lucide-react";
+import { Mail, MessageCircle } from "lucide-react";
 import { GitHubIcon, LinkedInIcon } from "@/components/ui/icons";
 import { contactInfo } from "@/data/contact";
 import { Card, CardHeader } from "@/components/ui/Card";
@@ -71,10 +71,19 @@ export function ContactSection() {
             <Mail className="w-4 h-4" aria-hidden="true" />
             Send Email
           </Button>
+
+          <Button
+                href="https://wa.me/233356342899?text=Hi%20Kene%2C%20I%20came%20across%20your%20portfolio%20and%20I%27d%20like%20to%20discuss%20a%20project%20with%20you."
+                external
+                variant="secondary"
+          >
+         <MessageCircle className="w-4 h-4" aria-hidden="true" />
+          Send Message
+         </Button>
         </div>
-      </Card>
-    </section>
-  );
+        </Card>
+      </section>
+    );
 }
 
 export function FooterLinks() {
