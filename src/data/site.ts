@@ -17,7 +17,7 @@ export const siteConfig = {
     "Responsive Interfaces",
   ],
   metrics: {
-    projects: "4+",
+    projects: "6+",
     coreStack: "10+",
     focus: "FULL-STACK",
     status: "AVAILABLE",

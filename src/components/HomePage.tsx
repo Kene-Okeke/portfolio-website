@@ -17,10 +17,21 @@ export function HomePage() {
   const handleNavigate = useCallback((href: string) => {
     const id = href.replace("#", "");
     const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth", block: "start" });
-      setActiveSection(id);
-    }
+  
+    if (!element) return;
+  
+    const isMobile = window.innerWidth < 1024;
+    const headerOffset = isMobile ? 64 : 0;
+  
+    const elementPosition =
+      element.getBoundingClientRect().top + window.scrollY;
+  
+    window.scrollTo({
+      top: Math.max(0, elementPosition - headerOffset),
+      behavior: "smooth",
+    });
+  
+    setActiveSection(id);
   }, []);
 
   useEffect(() => {
@@ -29,6 +40,7 @@ export function HomePage() {
       "projects",
       "stack",
       "about",
+      "education",
       "journey",
       "contact",
     ];
