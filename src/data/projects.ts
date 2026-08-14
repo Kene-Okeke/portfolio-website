@@ -142,43 +142,47 @@ export const projects: Project[] = [
   {
     slug: "adrf-group",
     name: "ADRF Group",
-    type: "Website / UX Revamp",
+    type: "Corporate Web Experience & UX Revamp",
     status: "LIVE",
-    stack: ["WordPress", "Elementor", "JavaScript"],
+    stack: ["WordPress", "Elementor Pro", "JavaScript", "PHP", "Custom CSS"],
     description:
-      "Corporate website redesign with improved information architecture, modern visual identity, and responsive layouts.",
-    liveUrl: "https://example.com/adrf-group",
+      "Production corporate website revamp combining custom WordPress development, Elementor architecture, JavaScript interactions, responsive UX engineering, and improved content architecture.",
+    liveUrl: "https://adrf.com/",
     caseStudy: {
       overview:
-        "ADRF Group required a website refresh to better communicate their services, improve navigation, and present a professional digital presence aligned with their brand.",
+        "ADRF Group required a complete digital experience refresh to modernize its corporate presence, improve information architecture, and create a responsive website that communicates its services more effectively.",
       problem:
-        "The existing site had outdated layouts, poor mobile responsiveness, and content that was difficult for non-technical staff to update.",
+        "The existing experience had outdated layouts, inconsistent responsive behavior, and a content structure that made important information difficult to discover and maintain.",
       solution:
-        "Rebuilt the site on WordPress with Elementor, creating custom page templates, a streamlined navigation structure, and a content management workflow the team could maintain independently.",
+        "Rebuilt the website on WordPress using Elementor Pro, custom CSS, JavaScript interactions, and PHP theme-level customization. The redesign focused on restructuring content, improving navigation, creating reusable page patterns, and delivering a responsive experience across device sizes.",
       features: [
-        "Custom Elementor page templates",
-        "Responsive design across all breakpoints",
-        "Improved service and about page structure",
+        "Custom Elementor Pro page architecture",
+        "Custom JavaScript interactions and UI enhancements",
+        "Responsive layouts across desktop, tablet, and mobile",
+        "Improved information architecture and navigation",
+        "Custom CSS styling and component refinement",
         "Contact forms with validation",
-        "SEO-friendly page structure",
-        "Easy content editing for non-developers",
+        "SEO-friendly content structure",
+        "Maintainable content editing workflow",
       ],
       technology: [
         "WordPress",
         "Elementor Pro",
-        "Custom CSS",
         "JavaScript",
-        "PHP (theme hooks)",
+        "Custom CSS",
+        "PHP",
+        "WordPress Theme Hooks",
       ],
       architecture:
-        "WordPress CMS with a custom child theme and Elementor for page building. JavaScript handles interactive elements and form enhancements. Standard LAMP hosting deployment.",
+        "WordPress CMS using Elementor Pro for page composition, custom CSS for visual and responsive behavior, JavaScript for interactive functionality and UI enhancements, and PHP theme hooks for deeper WordPress customization.",
       challenges: [
-        "Migrating existing content without breaking URLs or SEO rankings",
-        "Creating Elementor templates that remain consistent across pages",
-        "Ensuring performance with Elementor's asset loading",
+        "Reworking the existing information architecture without disrupting the site's content hierarchy",
+        "Building reusable Elementor structures while maintaining consistent responsive behavior",
+        "Implementing custom JavaScript interactions alongside Elementor's frontend system",
+        "Maintaining performance while working within a heavily visual WordPress environment",
       ],
       result:
-        "Delivered a modern, maintainable corporate website that improved user navigation and gave the client full control over content updates.",
+        "Delivered a significantly modernized corporate web experience with improved navigation, responsive behavior, custom interactions, and a maintainable WordPress architecture.",
       screenshots: [
         {
           src: "/projects/adrf-group/home.png",
@@ -194,26 +198,26 @@ export const projects: Project[] = [
   {
     slug: "garden-of-becoming",
     name: "The Garden of Becoming",
-    type: "Digital Products E-Commerce Platform",
+    type: "Digital Publishing & Content Delivery Platform",
     status: "LIVE",
-    stack: ["WordPress", "WooCommerce", "JavaScript", "Stripe", "PHP"],
+    stack: ["WordPress", "WooCommerce", "JavaScript", "PHP", "Stripe"],
     description:
-      "Production e-commerce platform for e-books and audiobooks with Stripe payments, custom audiobook previews, and fully automated digital fulfillment.",
+      "Production digital publishing platform for e-books and audiobooks, featuring custom JavaScript audio experiences, Stripe payments, protected content delivery, customer accounts, and automated fulfillment.",
     liveUrl: "https://thegardenofbecoming.com/",
     caseStudy: {
       overview:
-        "A production e-commerce platform for selling e-books and audiobooks, built with WordPress and WooCommerce. Integrated Stripe payments, custom audiobook preview player, and automated digital delivery workflows.",
+        "A production digital publishing and content delivery platform for e-books and audiobooks. Extended WordPress and WooCommerce with Stripe payments, custom JavaScript audio previews, protected digital asset delivery, customer accounts, and automated fulfillment workflows.",
       problem:
-        "The client needed a self-hosted digital storefront to sell e-books and audiobooks directly — with secure payments, protected file delivery, and fulfillment that scales without manual order processing.",
+        "The client needed a direct-to-customer publishing platform capable of securely selling and delivering digital books and audiobooks while automating payment processing, content delivery, customer access, and post-purchase communication.",
       solution:
-        "Built a WooCommerce-powered platform with Stripe integration, custom JavaScript for audiobook previews, automated purchase confirmation emails, expiring secure download links, and customer account functionality for managing purchases.",
+        "Built a WooCommerce-powered publishing platform with Stripe payment processing, custom JavaScript audiobook previews, automated confirmation and delivery emails, protected expiring download links, and customer account functionality for managing purchased content.",
       features: [
-        "Integrated Stripe payments for secure digital product purchases",
+        "Integrated Stripe payment processing",
         "Custom JavaScript audiobook preview player",
-        "Automated purchase confirmation and email delivery",
-        "Secure, expiring download links for purchased products",
-        "Customer account functionality for purchase management",
-        "Fully automated digital fulfillment",
+        "Automated purchase confirmation and delivery emails",
+        "Protected expiring download links",
+        "Customer account and digital library functionality",
+        "End-to-end automated fulfillment",
       ],
       technology: [
         "WordPress",
@@ -221,16 +225,18 @@ export const projects: Project[] = [
         "Stripe",
         "JavaScript",
         "PHP",
+        "CSS",
       ],
       architecture:
-        "WordPress CMS with WooCommerce handling product catalog, cart, and checkout. Stripe gateway processes payments. Custom JavaScript powers audiobook previews. WooCommerce digital download and email systems handle automated fulfillment.",
+        "WordPress and WooCommerce provide the application and commerce foundation, with Stripe handling payment processing, custom JavaScript powering the audiobook preview experience, and WooCommerce digital delivery and email workflows coordinating protected post-purchase content access.",
       challenges: [
-        "Building a reliable audiobook preview experience without exposing full assets",
-        "Configuring secure, expiring download links for digital products",
-        "Ensuring end-to-end automation from payment to delivery",
+        "Building a controlled audiobook preview experience without exposing full audio assets",
+        "Implementing protected, expiring access to purchased digital files",
+        "Connecting payment completion to a reliable automated delivery workflow",
+        "Creating a customer access flow for managing previously purchased content",
       ],
       result:
-        "Delivered a production platform that processed $10K+ in revenue within the first 90 days with zero manual fulfillment and 100% automated digital delivery.",
+        "Delivered a production digital publishing platform that processed $10K+ in revenue within the first 90 days, with zero manual fulfillment and fully automated digital delivery.",
       screenshots: [],
     },
   },

@@ -289,10 +289,11 @@ export function ShopElevenCaseStudy() {
           </Card>
         </Section>
 
-        {/* 6. Shop Experience — hybrid: screenshot + text side-by-side; code under description */}
+        {/* 6. Shop Experience */}
         <Section>
           <Card>
-            <div className="grid gap-6 lg:grid-cols-2 lg:items-start">
+            <CardHeader title="Product Discovery" />
+            <div className="space-y-6">
               <ScreenshotPlaceholder
                 src={shopElevenImages.shop.src}
                 alt={shopElevenImages.shop.alt}
@@ -300,21 +301,16 @@ export function ShopElevenCaseStudy() {
                 width={shopElevenImages.shop.width}
                 height={shopElevenImages.shop.height}
               />
-              <div className="flex min-w-0 flex-col gap-4">
-                <div>
-                  <CardHeader title="Product Discovery" className="mb-3" />
-                  <p className="text-sm text-muted leading-relaxed">
-                    The shop interface dynamically presents available products
-                    while keeping navigation, categories, and product discovery
-                    straightforward.
-                  </p>
-                </div>
-                <CodeBlock
-                  filename={shopElevenSnippets.shopPage.filename}
-                  language={shopElevenSnippets.shopPage.language}
-                  code={shopElevenSnippets.shopPage.code}
-                />
-              </div>
+              <p className="text-sm text-muted leading-relaxed">
+                The shop interface dynamically presents available products
+                while keeping navigation, categories, and product discovery
+                straightforward.
+              </p>
+              <CodeBlock
+                filename={shopElevenSnippets.shopPage.filename}
+                language={shopElevenSnippets.shopPage.language}
+                code={shopElevenSnippets.shopPage.code}
+              />
             </div>
           </Card>
         </Section>

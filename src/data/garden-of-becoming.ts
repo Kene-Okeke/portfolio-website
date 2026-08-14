@@ -1,12 +1,12 @@
 export const gardenOfBecomingMeta = {
   name: "The Garden of Becoming",
-  tagline: "Digital Products E-Commerce Platform",
+  tagline: "Digital Publishing & Content Delivery Platform",
   description:
-    "A production e-commerce platform for selling e-books and audiobooks, built with WordPress and WooCommerce. Integrated Stripe payments, custom audiobook previews, and fully automated digital fulfillment — processing $10K+ in revenue within the first 90 days with zero manual order handling.",
+    "Production digital publishing platform for e-books and audiobooks, combining WooCommerce commerce infrastructure with Stripe payments, custom JavaScript audio experiences, protected digital asset delivery, customer accounts, and fully automated fulfillment — processing $10K+ in revenue within the first 90 days.",
   role: "Lead Developer · MC Tech Web Agency",
-  stack: "WordPress · WooCommerce · JavaScript · Stripe · PHP",
+  stack: "WordPress · WooCommerce · JavaScript · PHP · Stripe",
   status: "Live",
-  category: "Digital Commerce",
+  category: "Digital Publishing",
   liveUrl: "https://thegardenofbecoming.com/",
 };
 
@@ -32,32 +32,32 @@ export const gardenOfBecomingFeatures = [
   {
     title: "Stripe Payment Integration",
     description:
-      "Secure card payments for digital product purchases, with WooCommerce handling order creation and Stripe managing payment capture.",
+      "Integrated Stripe with WooCommerce to handle secure payment capture and reliably transition completed transactions into the digital fulfillment workflow.",
   },
   {
-    title: "Audiobook Preview Player",
+    title: "Custom JavaScript Audio Player",
     description:
-      "Custom JavaScript player lets customers sample audio content before purchasing, improving conversion on high-value audiobooks.",
+      "Built a custom JavaScript audiobook preview experience that gives customers controlled access to sample audio before purchasing while keeping the full digital asset protected.",
   },
   {
-    title: "Automated Email Delivery",
+    title: "Automated Fulfillment Pipeline",
     description:
-      "Purchase confirmation and product delivery emails fire automatically on successful payment — no manual follow-up required.",
+      "Connected payment completion, order processing, confirmation emails, and digital delivery into an automated workflow that removes manual fulfillment from the process.",
   },
   {
-    title: "Secure Download Links",
+    title: "Protected Digital Asset Delivery",
     description:
-      "Time-limited, expiring download URLs protect purchased digital assets while giving customers reliable access to their content.",
+      "Configured secure, time-limited download access for purchased digital products, allowing customers to retrieve their content without exposing permanent public file URLs.",
   },
   {
-    title: "Customer Accounts",
+    title: "Customer Digital Library",
     description:
-      "Registered users can manage purchases, re-download products, and access their digital library from a dedicated account area.",
+      "Implemented customer account functionality allowing users to manage purchases and regain access to previously purchased digital content.",
   },
   {
-    title: "End-to-End Automation",
+    title: "End-to-End Workflow Automation",
     description:
-      "From checkout to delivery, the entire fulfillment pipeline runs without manual order processing or file handoff.",
+      "Engineered the complete purchase-to-delivery lifecycle across payment processing, order management, email notifications, account access, and protected downloads.",
   },
 ];
 
@@ -71,19 +71,19 @@ export const gardenOfBecomingStackLayers = [
     items: ["Stripe", "WooCommerce Stripe Gateway"],
   },
   {
-    label: "Frontend",
-    items: ["Custom JavaScript", "PHP Templates", "CSS"],
+    label: "Application",
+    items: ["Custom JavaScript", "PHP", "CSS"],
   },
   {
-    label: "Fulfillment",
+    label: "Delivery",
     items: ["Automated Emails", "Secure Downloads", "Digital Products"],
   },
 ];
 
 export const gardenOfBecomingFulfillmentFlow = [
   "Customer Checkout",
-  "Stripe Payment",
-  "Order Confirmation",
+  "Stripe Payment Capture",
+  "Order Processing",
   "Automated Email Delivery",
-  "Secure Download Access",
+  "Protected Download Access",
 ];

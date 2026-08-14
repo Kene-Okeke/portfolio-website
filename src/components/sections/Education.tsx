@@ -40,7 +40,7 @@ export function EducationSection() {
                   </p>
                 </div>
               </div>
-              {item.viewUrl && (
+              {item.viewUrl && item.type === "certification" && (
                 <div className="mt-4 pt-4 border-t border-border">
                   <a
                     href={item.viewUrl}

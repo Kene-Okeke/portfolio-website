@@ -84,12 +84,15 @@ function KpiCard({
             "radial-gradient(circle at top right, var(--color-accent, #22d3ee), transparent 60%)",
         }}
       />
+
       <p className="relative text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-foreground">
         {value}
       </p>
+
       <p className="relative mt-2 text-xs font-semibold tracking-[0.15em] text-accent uppercase">
         {label}
       </p>
+
       <p className="relative mt-2 text-sm text-muted leading-relaxed">
         {detail}
       </p>
@@ -126,19 +129,35 @@ export function GardenOfBecomingCaseStudy() {
               <p className="text-[10px] font-semibold tracking-[0.2em] text-accent uppercase mb-4">
                 Case Study
               </p>
+
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-foreground">
                 {gardenOfBecomingMeta.name}
               </h1>
+
               <p className="mt-2 text-sm md:text-base font-medium tracking-wide text-muted uppercase">
                 {gardenOfBecomingMeta.tagline}
               </p>
+
               <p className="mt-5 text-sm md:text-base text-muted leading-relaxed max-w-3xl">
                 {gardenOfBecomingMeta.description}
               </p>
+
               <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-                <MetaCard label="Role" value={gardenOfBecomingMeta.role} />
-                <MetaCard label="Stack" value={gardenOfBecomingMeta.stack} />
-                <MetaCard label="Status" value={gardenOfBecomingMeta.status} />
+                <MetaCard
+                  label="Role"
+                  value={gardenOfBecomingMeta.role}
+                />
+
+                <MetaCard
+                  label="Stack"
+                  value={gardenOfBecomingMeta.stack}
+                />
+
+                <MetaCard
+                  label="Status"
+                  value={gardenOfBecomingMeta.status}
+                />
+
                 <MetaCard
                   label="Category"
                   value={gardenOfBecomingMeta.category}
@@ -148,9 +167,10 @@ export function GardenOfBecomingCaseStudy() {
           </div>
         </Section>
 
-        {/* Impact Metrics */}
+        {/* Impact */}
         <Section>
           <CardHeader title="Impact at a Glance" />
+
           <div className="grid gap-4 md:grid-cols-3">
             {gardenOfBecomingImpactMetrics.map((metric) => (
               <KpiCard
@@ -167,30 +187,34 @@ export function GardenOfBecomingCaseStudy() {
         <Section>
           <Card>
             <CardHeader title="The Problem" />
+
             <div className="grid gap-6 md:grid-cols-[1.2fr_0.8fr]">
               <div className="space-y-4 text-sm text-muted leading-relaxed">
                 <p>
-                  The Garden of Becoming needed a production-ready platform to
-                  sell e-books and audiobooks directly to customers — without
-                  relying on third-party marketplaces that take significant
-                  revenue cuts and limit brand control.
+                  The Garden of Becoming needed a reliable digital commerce
+                  system for selling e-books and audiobooks directly to
+                  customers.
                 </p>
+
                 <p>
-                  Digital product sales introduce specific challenges: secure
-                  payment processing, protected file delivery, customer account
-                  management, and fulfillment workflows that must run reliably
-                  at scale without manual intervention for every order.
+                  The platform needed to support secure payments, protected
+                  digital assets, audiobook previews, customer accounts, and
+                  automated fulfillment without requiring manual intervention
+                  after every purchase.
                 </p>
               </div>
+
               <div className="rounded-lg border border-dashed border-border bg-background p-5">
                 <p className="text-[10px] font-semibold tracking-[0.15em] text-muted uppercase mb-2">
                   Requirement Focus
                 </p>
+
                 <ul className="space-y-2 text-sm text-muted" role="list">
-                  <li>Secure online payments for digital goods</li>
-                  <li>Automated delivery after purchase</li>
-                  <li>Audiobook sampling before purchase</li>
-                  <li>Customer purchase history and re-downloads</li>
+                  <li>Secure online payments</li>
+                  <li>Automated digital delivery</li>
+                  <li>Audiobook previews</li>
+                  <li>Protected digital downloads</li>
+                  <li>Customer purchase management</li>
                 </ul>
               </div>
             </div>
@@ -201,21 +225,31 @@ export function GardenOfBecomingCaseStudy() {
         <Section>
           <Card>
             <CardHeader title="The Solution" />
+
             <div className="space-y-4 text-sm text-muted leading-relaxed">
               <p>
-                Built on WordPress and WooCommerce, the platform handles the
-                full digital commerce lifecycle — from product catalog and
-                checkout through automated fulfillment. Stripe integration
-                provides secure payment processing, while custom JavaScript
-                powers the audiobook preview experience.
+                I built the solution on WordPress and WooCommerce, extending
+                the platform with Stripe payment processing, custom JavaScript
+                functionality, digital product configuration, and automated
+                fulfillment workflows.
               </p>
+
+              <p>
+                One of the key custom pieces was the audiobook preview
+                experience, allowing customers to sample audio before
+                purchasing. The platform also uses WooCommerce&apos;s digital
+                product functionality to manage protected downloads and
+                automated customer delivery.
+              </p>
+
               <p>
                 Developed as part of my work at{" "}
-                <span className="text-foreground">MC Tech Web Agency</span>,
-                the platform was engineered for production reliability: every
-                purchase triggers confirmation emails, secure download links,
-                and account-level access without requiring manual order
-                processing.
+                <span className="text-foreground">
+                  MC Tech Web Agency
+                </span>
+                , the implementation focused on reducing operational overhead
+                while giving customers a complete self-service purchasing
+                experience.
               </p>
             </div>
           </Card>
@@ -224,9 +258,11 @@ export function GardenOfBecomingCaseStudy() {
         {/* Key Features */}
         <Section>
           <CardHeader title="Key Features" />
+
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {gardenOfBecomingFeatures.map((feature, index) => {
               const Icon = featureIcons[index] ?? Sparkles;
+
               return (
                 <Card
                   key={feature.title}
@@ -236,9 +272,11 @@ export function GardenOfBecomingCaseStudy() {
                     className="h-4 w-4 text-accent mb-3"
                     aria-hidden="true"
                   />
+
                   <h3 className="text-sm font-semibold text-foreground mb-2">
                     {feature.title}
                   </h3>
+
                   <p className="text-sm text-muted leading-relaxed">
                     {feature.description}
                   </p>
@@ -252,11 +290,12 @@ export function GardenOfBecomingCaseStudy() {
         <Section>
           <Card>
             <CardHeader title="Automated Fulfillment Flow" />
+
             <p className="text-sm text-muted leading-relaxed mb-8">
-              Every order follows the same automated pipeline — from payment
-              capture to digital delivery — eliminating manual fulfillment
-              entirely.
+              The purchasing workflow is automated from payment through
+              delivery, removing the need for manual order handling.
             </p>
+
             <div className="flex flex-col items-center gap-2">
               {gardenOfBecomingFulfillmentFlow.map((step, index) => (
                 <div key={step} className="flex flex-col items-center">
@@ -265,7 +304,9 @@ export function GardenOfBecomingCaseStudy() {
                       {step}
                     </p>
                   </div>
-                  {index < gardenOfBecomingFulfillmentFlow.length - 1 && (
+
+                  {index <
+                    gardenOfBecomingFulfillmentFlow.length - 1 && (
                     <span
                       className="my-1 text-muted text-lg"
                       aria-hidden="true"
@@ -282,6 +323,7 @@ export function GardenOfBecomingCaseStudy() {
         {/* Technical Stack */}
         <Section>
           <CardHeader title="Technical Stack" />
+
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {gardenOfBecomingStackLayers.map((layer) => (
               <Card
@@ -289,11 +331,16 @@ export function GardenOfBecomingCaseStudy() {
                 className="hover:border-border-hover transition-colors"
               >
                 <div className="flex items-center gap-2 mb-4">
-                  <Layers className="h-4 w-4 text-accent" aria-hidden="true" />
+                  <Layers
+                    className="h-4 w-4 text-accent"
+                    aria-hidden="true"
+                  />
+
                   <p className="text-[10px] font-semibold tracking-[0.15em] text-muted uppercase">
                     {layer.label}
                   </p>
                 </div>
+
                 <ul className="space-y-2" role="list">
                   {layer.items.map((item) => (
                     <li
@@ -313,12 +360,15 @@ export function GardenOfBecomingCaseStudy() {
         <Section>
           <Card>
             <CardHeader title="Outcome & Impact" />
+
             <p className="text-sm text-muted leading-relaxed mb-8">
-              The platform launched as a fully operational digital storefront
-              and generated measurable revenue within the first 90 days. With
-              100% automated fulfillment, the client can focus on content and
-              marketing rather than manual order processing.
+              The platform launched as a production digital commerce system
+              and processed more than $10K in revenue during its first 90
+              days. The automated fulfillment workflow removed the need for
+              manual order handling while giving customers immediate access
+              to their purchased content.
             </p>
+
             <div className="grid gap-4 md:grid-cols-3 mb-8">
               {gardenOfBecomingImpactMetrics.map((metric) => (
                 <KpiCard
@@ -329,16 +379,20 @@ export function GardenOfBecomingCaseStudy() {
                 />
               ))}
             </div>
-            <ul className="grid gap-2 sm:grid-cols-2 text-sm text-muted" role="list">
+
+            <ul
+              className="grid gap-2 sm:grid-cols-2 text-sm text-muted"
+              role="list"
+            >
               {[
-                "Production e-commerce platform for digital products",
-                "Stripe-integrated checkout with secure payments",
-                "Custom audiobook preview player",
-                "Automated email delivery on purchase",
-                "Expiring secure download links",
-                "Customer account and purchase management",
-                "Zero manual fulfillment required",
-                "Real revenue generated post-launch",
+                "Production digital commerce platform",
+                "Stripe-integrated checkout",
+                "Custom JavaScript audiobook preview player",
+                "Automated purchase and delivery emails",
+                "Protected digital downloads",
+                "Customer purchase management",
+                "Zero manual fulfillment",
+                "$10K+ revenue processed in first 90 days",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-2">
                   <ShieldCheck
@@ -358,9 +412,11 @@ export function GardenOfBecomingCaseStudy() {
             <p className="text-[10px] font-semibold tracking-[0.2em] text-muted uppercase mb-2">
               {gardenOfBecomingMeta.name}
             </p>
+
             <h2 className="text-xl md:text-2xl font-bold text-foreground mb-2">
               Explore the live platform.
             </h2>
+
             <div className="flex flex-wrap justify-center gap-3 mt-6">
               <Button
                 href={gardenOfBecomingMeta.liveUrl}
@@ -370,6 +426,7 @@ export function GardenOfBecomingCaseStudy() {
                 View Live Site
               </Button>
             </div>
+
             <Link
               href="/#projects"
               className="inline-flex items-center gap-2 mt-8 text-xs text-muted hover:text-accent transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded"
