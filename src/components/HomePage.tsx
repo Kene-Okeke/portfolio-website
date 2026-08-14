@@ -18,20 +18,19 @@ export function HomePage() {
     const id = href.replace("#", "");
     const element = document.getElementById(id);
   
-    if (!element) return;
+    if (element) {
+      const navOffset = window.innerWidth < 1024 ? 64 : 0;
   
-    const isMobile = window.innerWidth < 1024;
-    const headerOffset = isMobile ? 64 : 0;
+      const elementPosition =
+        element.getBoundingClientRect().top + window.scrollY;
   
-    const elementPosition =
-      element.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({
+        top: elementPosition - navOffset,
+        behavior: "smooth",
+      });
   
-    window.scrollTo({
-      top: Math.max(0, elementPosition - headerOffset),
-      behavior: "smooth",
-    });
-  
-    setActiveSection(id);
+      setActiveSection(id);
+    }
   }, []);
 
   useEffect(() => {
