@@ -73,7 +73,7 @@ export function ContactSection() {
           </Button>
 
           <Button
-                href="https://wa.me/233356342899?text=Hi%20Kene%2C%20I%20came%20across%20your%20portfolio%20and%20I%27d%20like%20to%20discuss%20a%20project%20with%20you."
+                href="https://wa.me/233256342899?text=Hi%20Kene%2C%20I%20came%20across%20your%20portfolio%20and%20I%27d%20like%20to%20discuss%20a%20project%20with%20you."
                 external
                 variant="secondary"
           >

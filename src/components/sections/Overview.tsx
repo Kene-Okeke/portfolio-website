@@ -5,7 +5,11 @@ import { Card, CardHeader } from "@/components/ui/Card";
 
 export function OverviewSection() {
   return (
-    <section id="overview" aria-labelledby="overview-heading">
+    <section
+    id="overview"
+    className="scroll-mt-20"
+    aria-labelledby="overview-heading"
+  >
       <h2 id="overview-heading" className="sr-only">
         Overview
       </h2>

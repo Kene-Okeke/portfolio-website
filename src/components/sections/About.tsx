@@ -3,7 +3,11 @@ import { Card, CardHeader } from "@/components/ui/Card";
 
 export function AboutSection() {
   return (
-    <section id="about" className="mt-12 md:mt-16" aria-labelledby="about-heading">
+    <section
+    id="about"
+    className="mt-12 md:mt-16 scroll-mt-20"
+    aria-labelledby="about-heading"
+  >
       <CardHeader title="About" />
       <div className="grid gap-4 md:grid-cols-3">
         <Card className="md:col-span-2">
